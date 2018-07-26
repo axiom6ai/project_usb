@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ariel_bee" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="usbee" translatesAutoresizingMaskIntoConstraints="NO" id="bQF-xV-4Dk">
+                                <rect key="frame" x="0.0" y="238" width="375" height="218"/>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jck-74-hdi">
+                                <rect key="frame" x="124" y="618" width="141" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Answer:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OOR-tt-jzM">
+                                <rect key="frame" x="40" y="623" width="68" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="      &quot;What do you call .." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7b3-V8-CRN">
+                                <rect key="frame" x="0.0" y="58" width="375" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="                    a Bee that is made in America?&quot;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jGR-an-PWK">
+                                <rect key="frame" x="0.0" y="100" width="375" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="question_mark_icon" translatesAutoresizingMaskIntoConstraints="NO" id="EFg-cQ-hkX">
+                                <rect key="frame" x="0.0" y="238" width="375" height="218"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="jGR-an-PWK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="0Pi-cg-s7p"/>
+                            <constraint firstItem="7b3-V8-CRN" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="38" id="0mu-1u-IBb"/>
+                            <constraint firstItem="jGR-an-PWK" firstAttribute="top" secondItem="7b3-V8-CRN" secondAttribute="bottom" constant="21" id="E3i-Ml-4Wr"/>
+                            <constraint firstItem="7b3-V8-CRN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Edf-a9-tup"/>
+                            <constraint firstItem="7b3-V8-CRN" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="ElC-CY-6dU"/>
+                            <constraint firstItem="bQF-xV-4Dk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Gfy-wI-chL"/>
+                            <constraint firstItem="bQF-xV-4Dk" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="218" id="ho7-Ev-VR4"/>
+                            <constraint firstItem="bQF-xV-4Dk" firstAttribute="top" secondItem="7b3-V8-CRN" secondAttribute="bottom" constant="159" id="oih-FK-kvK"/>
+                            <constraint firstItem="bQF-xV-4Dk" firstAttribute="top" secondItem="jGR-an-PWK" secondAttribute="bottom" constant="117" id="rDK-2I-Xjp"/>
+                            <constraint firstItem="jGR-an-PWK" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="s1r-Z2-wpS"/>
+                            <constraint firstItem="bQF-xV-4Dk" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="sPS-F1-D1X"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="bQF-xV-4Dk" secondAttribute="bottom" constant="211" id="vp5-sd-Cad"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="questionImage" destination="EFg-cQ-hkX" id="tDT-29-Rd2"/>
+                        <outlet property="usbImage" destination="bQF-xV-4Dk" id="WIx-w5-4BL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="question_mark_icon" width="852" height="480"/>
+        <image name="usbee" width="1114" height="1080"/>
+    </resources>
+</document>
