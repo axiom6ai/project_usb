@@ -1,2 +1,2 @@
 # project_usb
-"This is not Sean's joke?"
+"This is not Sean's joke lol?"
