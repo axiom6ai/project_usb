@@ -13,6 +13,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        /*
         for x in 0 ... 6 {
             if (x == 6){
                 print ("Current Value is:  ", x)
@@ -26,7 +27,7 @@ class ViewController: UIViewController {
                 print ("Current Value is:  ", x)
             }
         }
-
+         */
 
     }
 
@@ -38,6 +39,16 @@ class ViewController: UIViewController {
     @IBOutlet weak var questionImage: UIImageView!
     
     @IBOutlet weak var usbImage: UIImageView!
+    
+    @IBAction func answerButton(_ sender: Any) {
+        
+        usbImage.isHidden = false
+        questionImage.isHidden = true
+        print ("Show picture!")
+        
+    }
+    
+    
 
 }
 
