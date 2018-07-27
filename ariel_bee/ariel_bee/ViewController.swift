@@ -17,8 +17,8 @@ class ViewController: UIViewController {
             if (x == 6){
                 print ("Current Value is:  ", x)
                 
-                usbImage.isHidden = false
-                questionImage.isHidden = true
+                usbImage.isHidden = true
+                questionImage.isHidden = false
                 print ("Show picture!")
                 
             }
@@ -29,7 +29,15 @@ class ViewController: UIViewController {
 
 
     }
+    @IBAction func frenchbuttonpress(_ sender: UIButton) {
+        
+        usbImage.isHidden = false
+        questionImage.isHidden = true
+        func increaseCount(button:UIButton) -> Void {button.isHidden = true}
 
+        
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
