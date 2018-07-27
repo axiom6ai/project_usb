@@ -19,13 +19,8 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    for x in 0 ... 6 {
-    if (x == 6){
     
-        bed.isHidden = false
-        ? isHidden = true
-    
-    }
-
 }
+
+
 
