@@ -15,8 +15,8 @@ class ViewController: UIViewController {
             if (x == 6){
                 print ("Current Value is:  ", x)
                 
-                usbImage.isHidden = false
-                questionImage.isHidden = true
+                usbImage.isHidden = true
+                questionImage.isHidden = false
                 print ("Show picture!")
                 
             }
@@ -24,10 +24,23 @@ class ViewController: UIViewController {
                 print ("Current Value is:  ", x)
             }
         }
-
-
     }
 
+    @IBAction func Answer(_ sender: Any) {
+        //usbImage.isHidden = false
+        revealAnswer()
+        //questionImage.isHidden = true
+        hideQuestion()
+    }
+    
+    func revealAnswer(){
+        usbImage.isHidden = false
+    }
+    
+    func hideQuestion() {
+        questionImage.isHidden = true
+        
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -37,5 +50,13 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var usbImage: UIImageView!
 
+    //var Answer = textbox; bed
+    //@IBOutlet weak var textbox: UITextField!
+    //if    ])
+    
+
 }
+
+
+
 

@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina5_5" orientation="portrait">
+    <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -15,11 +16,11 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ariel_bee" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bed" translatesAutoresizingMaskIntoConstraints="NO" id="bQF-xV-4Dk">
-                                <rect key="frame" x="0.0" y="238" width="414" height="287"/>
+                                <rect key="frame" x="0.0" y="262" width="414.33333333333331" height="305"/>
                             </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jck-74-hdi">
                                 <rect key="frame" x="124" y="618" width="141" height="30"/>
@@ -27,6 +28,9 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="textbox:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="wlb-1h-SKp"/>
+                                </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Answer:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OOR-tt-jzM">
                                 <rect key="frame" x="40" y="623" width="68" height="21"/>
@@ -36,19 +40,32 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What has 2 head, one foot.." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7b3-V8-CRN">
-                                <rect key="frame" x="0.0" y="58" width="414" height="21"/>
+                                <rect key="frame" x="0.0" y="82" width="414.33333333333331" height="21"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="                 and four legs?????" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jGR-an-PWK">
-                                <rect key="frame" x="0.0" y="100" width="414" height="21"/>
+                                <rect key="frame" x="0.0" y="124" width="414.33333333333331" height="21"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P1N-xs-suX">
+                                <rect key="frame" x="228" y="64" width="147" height="57"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="147" id="IDv-wO-WnR"/>
+                                    <constraint firstAttribute="height" constant="57" id="OgN-jp-ZLw"/>
+                                    <constraint firstAttribute="width" secondItem="P1N-xs-suX" secondAttribute="height" multiplier="49:19" id="bal-qJ-BaF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Toohard?"/>
+                                <connections>
+                                    <action selector="Answer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ihk-5O-VGc"/>
+                                </connections>
+                            </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="questionmark2" translatesAutoresizingMaskIntoConstraints="NO" id="EFg-cQ-hkX">
-                                <rect key="frame" x="19" y="198" width="375" height="327"/>
+                                <rect key="frame" x="0.0" y="195" width="375" height="327"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -60,17 +77,22 @@
                             <constraint firstItem="7b3-V8-CRN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Edf-a9-tup"/>
                             <constraint firstItem="7b3-V8-CRN" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="ElC-CY-6dU"/>
                             <constraint firstItem="bQF-xV-4Dk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Gfy-wI-chL"/>
+                            <constraint firstItem="P1N-xs-suX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="267" id="Ybj-1z-Aw6"/>
+                            <constraint firstItem="P1N-xs-suX" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="dmd-qu-ipH"/>
                             <constraint firstItem="bQF-xV-4Dk" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="218" id="ho7-Ev-VR4"/>
+                            <constraint firstItem="P1N-xs-suX" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="nNG-Ox-ACc"/>
                             <constraint firstItem="bQF-xV-4Dk" firstAttribute="top" secondItem="7b3-V8-CRN" secondAttribute="bottom" constant="159" id="oih-FK-kvK"/>
                             <constraint firstItem="bQF-xV-4Dk" firstAttribute="top" secondItem="jGR-an-PWK" secondAttribute="bottom" constant="117" id="rDK-2I-Xjp"/>
                             <constraint firstItem="jGR-an-PWK" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="s1r-Z2-wpS"/>
                             <constraint firstItem="bQF-xV-4Dk" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="sPS-F1-D1X"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="bQF-xV-4Dk" secondAttribute="bottom" constant="211" id="vp5-sd-Cad"/>
+                            <constraint firstItem="jGR-an-PWK" firstAttribute="top" secondItem="P1N-xs-suX" secondAttribute="bottom" constant="3" id="xfT-n1-e6Y"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="questionImage" destination="EFg-cQ-hkX" id="tDT-29-Rd2"/>
+                        <outlet property="textbox" destination="jck-74-hdi" id="jMZ-zk-JnX"/>
                         <outlet property="usbImage" destination="bQF-xV-4Dk" id="WIx-w5-4BL"/>
                     </connections>
                 </viewController>
