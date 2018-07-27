@@ -12,22 +12,10 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        //revealAnswer()
         // Do any additional setup after loading the view, typically from a nib.
-        /*
-        for x in 0 ... 6 {
-            if (x == 6){
-                print ("Current Value is:  ", x)
-                
-                usbImage.isHidden = false
-                questionImage.isHidden = true
-                print ("Show picture!")
-                
-            }
-            else{
-                print ("Current Value is:  ", x)
-            }
-        }
-         */
+        
+        //printMessages()
 
     }
 
@@ -42,12 +30,27 @@ class ViewController: UIViewController {
     
     @IBAction func answerButton(_ sender: Any) {
         
-        usbImage.isHidden = false
-        questionImage.isHidden = true
+        //usbImage.isHidden = false
+        revealAnswer()
+        //questionImage.isHidden = true
+        hideQuestion()
         print ("Show picture!")
         
     }
     
+    func revealAnswer() {
+        usbImage.isHidden = false
+        print("Answer is revealed")
+    }
+    
+    func hideQuestion() {
+        questionImage.isHidden = true
+        print("Question Mark is hidden")
+    }
+    
+    func printMessages(){
+        print("say hi to joe")
+    }
     
 
 }
