@@ -5,9 +5,7 @@
 //  Created by sweetiewill on 7/26/18.
 //  Copyright © 2018 axiom6ai. All rights reserved.
 //
-
 import UIKit
-
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
