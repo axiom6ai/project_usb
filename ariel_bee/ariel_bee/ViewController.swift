@@ -50,9 +50,9 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var usbImage: UIImageView!
 
-    //var Answer = textbox; bed
-    //@IBOutlet weak var textbox: UITextField!
-    //if    ])
+    var Answer = textbox; bed
+    @IBOutlet weak var textbox: UITextField!
+    if    ])
     
 
 }
