@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="The_little_joke_and_the_quiz" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="屏幕快照 2018-07-27 下午1.40.35" translatesAutoresizingMaskIntoConstraints="NO" id="eT3-i5-fLD">
+                                <rect key="frame" x="0.0" y="147" width="369" height="311"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What animal is wearing black glasses on its' face?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="InT-5y-PBf">
+                                <rect key="frame" x="0.0" y="66.5" width="375" height="19.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="屏幕快照 2018-07-27 下午2.01.19" translatesAutoresizingMaskIntoConstraints="NO" id="ncJ-jM-Oyf">
+                                <rect key="frame" x="0.0" y="132" width="375" height="326"/>
+                                <color key="backgroundColor" red="0.83179035627954234" green="0.87552623060000001" blue="0.17800762028498429" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vR2-yx-eMP">
+                                <rect key="frame" x="139" y="560" width="97" height="48"/>
+                                <color key="backgroundColor" red="1" green="0.7357285168651444" blue="0.23353210448270978" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Answer"/>
+                                <connections>
+                                    <action selector="answerButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jXf-q0-EEK"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.31824428333727739" green="0.8104760362694301" blue="0.34755631516168495" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="vR2-yx-eMP" secondAttribute="bottom" constant="59" id="2cR-rc-ENI"/>
+                            <constraint firstItem="vR2-yx-eMP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="139" id="IRC-OB-prM"/>
+                            <constraint firstItem="ncJ-jM-Oyf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="UaN-Te-tpv"/>
+                            <constraint firstItem="InT-5y-PBf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="UeV-Ss-oj2"/>
+                            <constraint firstItem="ncJ-jM-Oyf" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="YLQ-JF-Zl8"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vR2-yx-eMP" secondAttribute="trailing" constant="139" id="fRn-u5-9yc"/>
+                            <constraint firstItem="vR2-yx-eMP" firstAttribute="top" secondItem="ncJ-jM-Oyf" secondAttribute="bottom" constant="102" id="hbg-GG-XA8"/>
+                            <constraint firstItem="ncJ-jM-Oyf" firstAttribute="top" secondItem="InT-5y-PBf" secondAttribute="bottom" constant="127" id="hnz-7B-jXa"/>
+                            <constraint firstItem="InT-5y-PBf" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="46.5" id="ojV-q3-P9n"/>
+                            <constraint firstItem="InT-5y-PBf" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="qke-3x-1O9"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="pandaImage" destination="eT3-i5-fLD" id="IcQ-eZ-pqN"/>
+                        <outlet property="questionImage" destination="ncJ-jM-Oyf" id="F19-dF-QRO"/>
+                        <outlet property="questionLabel" destination="InT-5y-PBf" id="Fpr-Jp-ZWX"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="135.19999999999999" y="132.68365817091455"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="屏幕快照 2018-07-27 下午1.40.35" width="258" height="311"/>
+        <image name="屏幕快照 2018-07-27 下午2.01.19" width="285" height="245"/>
+    </resources>
+</document>
