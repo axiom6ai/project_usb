@@ -15,8 +15,8 @@ class ViewController: UIViewController {
             if (x == 6){
                 print ("Current Value is:  ", x)
                 
-                usbImage.isHidden = true
-                questionImage.isHidden = false
+                bed.isHidden = true
+                questionmark.isHidden = false
                 print ("Show picture!")
                 
             }
@@ -34,11 +34,11 @@ class ViewController: UIViewController {
     }
     
     func revealAnswer(){
-        usbImage.isHidden = false
+        bed.isHidden = false
     }
     
     func hideQuestion() {
-        questionImage.isHidden = true
+        questionmark.isHidden = true
         
     }
     override func didReceiveMemoryWarning() {
@@ -46,16 +46,45 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    @IBOutlet weak var questionImage: UIImageView!
+    @IBOutlet weak var inputTextField: UITextField!
     
-    @IBOutlet weak var usbImage: UIImageView!
+    @IBOutlet weak var questionmark: UIImageView!
+    
+    @IBOutlet weak var resultLabel: UILabel!
+    
+    @IBOutlet weak var bed: UIImageView!
+   
+    @IBOutlet weak var falseResponse: UIImageView!
 
-    var Answer = textbox; bed
-    @IBOutlet weak var textbox: UITextField!
-    if    ])
-    
+    @IBAction func submit(_ sender: Any) {
+        
+        resultLabel.text = ""
+        print ("USER HAS PRESSED ENTER")
+        let input = self.inputTextField.text
+        print ("The Text Entered is", input!)
+        
+        
+        if (input == ("bed") || input == ("Bed") || input == ("BED")){
+            print ("YOU HAVE ENTERED CORRECTLY", input!)
+            bed.isHidden = false
+            falseResponse.isHidden = true
+            questionmark.isHidden = true
+        
+        }
+        
+        else{
+            print ("YOU HAVE ENTERED INCORRECTLY")
+            print ("YOUR RESPONSE OF: ", input! ," IS INCORRECT")
+            
+            bed.isHidden = true
+            falseResponse.isHidden = false
+            questionmark.isHidden = true
+            
+        }
+    }
 
 }
+
 
 
 
