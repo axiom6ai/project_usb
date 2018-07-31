@@ -7,30 +7,25 @@
 //
 
 import UIKit
-
 class ViewController: UIViewController {
-
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
-
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     @IBOutlet weak var newsImage: UIImageView!
     @IBOutlet weak var questionImage: UIImageView!
-    
     @IBAction func answerButton(_ sender: Any) {
         func revealAnswer() {
             newsImage.isHidden = false
             questionImage.isHidden = true
             print("Answer is revealed")
-            
         }
         func hideQuestionImage() {
-            newsImage.isHidden = true
+            newsImage.isHidden = false
             questionImage.isHidden = false
             print("Question Mark is revealed")
         }
@@ -38,21 +33,18 @@ class ViewController: UIViewController {
             print("the answer is news")
         }
         //newsImage.isHiidden = false
-        if (questionImage.isHidden == false) {
+        if (questionImage.isHidden == true) {
             hideQuestionImage()
-          
-          
+            print("question image is hidden")
         }
         else if (newsImage.isHidden == false) {
             revealAnswer()
-         
+            print("show the news image")
         }
         //revealAnswer()
         //questionImage.isHidden = true
-        //hideQuestion()
+        //hideQuestionImage()
         print("Show picture!")
-        
     }
-    
 }
 
