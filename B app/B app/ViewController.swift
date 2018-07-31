@@ -21,24 +21,25 @@ class ViewController: UIViewController {
     }
     @IBOutlet weak var newsImage: UIImageView!
     @IBOutlet weak var questionImage: UIImageView!
+    
     @IBAction func answerButton(_ sender: Any) {
-        
         func revealAnswer() {
             newsImage.isHidden = false
             questionImage.isHidden = true
             print("Answer is revealed")
+            
         }
-        func hideQuestion() {
+        func hideQuestionImage() {
             newsImage.isHidden = true
             questionImage.isHidden = false
-            print("Question Mark is hidden")
+            print("Question Mark is revealed")
         }
         func printMessages() {
             print("the answer is news")
         }
         //newsImage.isHiidden = false
         if (questionImage.isHidden == false) {
-            hideQuestion()
+            hideQuestionImage()
           
           
         }
@@ -52,7 +53,6 @@ class ViewController: UIViewController {
         print("Show picture!")
         
     }
-    
     
 }
 
