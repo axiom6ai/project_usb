@@ -26,18 +26,11 @@ class ViewController: UIViewController {
                 print ("Current Value is:  ", x)
             }
         }
-
+        
+        
 
     }
-    @IBAction func frenchbuttonpress(_ sender: UIButton) {
-        
-        usbImage.isHidden = false
-        questionImage.isHidden = true
-        func increaseCount(button:UIButton) -> Void {button.isHidden = true}
 
-        
-    }
-    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -46,6 +39,37 @@ class ViewController: UIViewController {
     @IBOutlet weak var questionImage: UIImageView!
     
     @IBOutlet weak var usbImage: UIImageView!
+    
+    func showImage () {
+        
+        usbImage.isHidden = false
+        questionImage.isHidden = true
+        print ("answer is presented")
+        
+    }
+    
+    func hideImage () {
+        
+        usbImage.isHidden = true
+        questionImage.isHidden = false
+        print ("answer is now hidden")
+    }
+  
+    @IBAction func answerButtonPress(_ sender: Any) {
+        
+        if (usbImage.isHidden == true) {
+            showImage()
+            
+        }
+            
+        else if (questionImage.isHidden == true) {
+            hideImage()
+            
+        }
+        
+    }
+    
+
+
 
 }
-
