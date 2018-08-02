@@ -12,6 +12,7 @@
 		5DB0C7572112E2DE002F266F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DB0C7552112E2DE002F266F /* Main.storyboard */; };
 		5DB0C7592112E2DF002F266F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5DB0C7582112E2DF002F266F /* Assets.xcassets */; };
 		5DB0C75C2112E2DF002F266F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DB0C75A2112E2DF002F266F /* LaunchScreen.storyboard */; };
+		5DD576962112F5E0001F6AD2 /* viewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD576952112F5E0001F6AD2 /* viewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		5DB0C7582112E2DF002F266F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5DB0C75B2112E2DF002F266F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5DB0C75D2112E2DF002F266F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5DD576952112F5E0001F6AD2 /* viewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = viewController.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				5DB0C7582112E2DF002F266F /* Assets.xcassets */,
 				5DB0C75A2112E2DF002F266F /* LaunchScreen.storyboard */,
 				5DB0C75D2112E2DF002F266F /* Info.plist */,
+				5DD576952112F5E0001F6AD2 /* viewController.swift */,
 			);
 			path = "QUIZ APP";
 			sourceTree = "<group>";
@@ -135,6 +138,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5DD576962112F5E0001F6AD2 /* viewController.swift in Sources */,
 				5DB0C7542112E2DE002F266F /* ViewController.swift in Sources */,
 				5DB0C7522112E2DE002F266F /* AppDelegate.swift in Sources */,
 			);
