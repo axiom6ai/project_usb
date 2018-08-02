@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="QUIZ_APP" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="How many days can a person live without sleep?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UAS-W7-ATn">
+                                <rect key="frame" x="34" y="28" width="308" height="142"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qbl-t1-i3S">
+                                <rect key="frame" x="78" y="405" width="220" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="ButtonA" image="屏幕快照 2018-08-02 14.55.13"/>
+                                <connections>
+                                    <action selector="typeButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XPn-qV-Q7V"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Bv-yX-9VD">
+                                <rect key="frame" x="78" y="489" width="220" height="72"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="ButtonB" image="屏幕快照 2018-08-02 14.55.22"/>
+                                <connections>
+                                    <action selector="alphabetButtton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bl7-Jr-Gak"/>
+                                    <action selector="typeButtons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uYN-JC-p3J"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5QP-V7-VlD">
+                                <rect key="frame" x="78" y="575" width="220" height="72"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="ButtonC" image="屏幕快照 2018-08-02 14.58.51"/>
+                                <connections>
+                                    <action selector="typeButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dzs-kA-VQG"/>
+                                    <action selector="typeButtons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Gsd-UO-xBP"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="屏幕快照 2018-08-01 10.00.10" translatesAutoresizingMaskIntoConstraints="NO" id="Khc-HI-HTj">
+                                <rect key="frame" x="52" y="157" width="273" height="228"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="Button1" destination="Qbl-t1-i3S" id="S88-UY-dkT"/>
+                        <outlet property="Button2" destination="9Bv-yX-9VD" id="Q6N-1O-k5w"/>
+                        <outlet property="Button3" destination="5QP-V7-VlD" id="UAR-Zh-zb7"/>
+                        <outlet property="ButtonA" destination="Qbl-t1-i3S" id="DQy-9F-fDd"/>
+                        <outlet property="ButtonB" destination="9Bv-yX-9VD" id="Ag1-rD-Jb0"/>
+                        <outlet property="ButtonC" destination="5QP-V7-VlD" id="wPp-Dr-Igm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="132.68365817091455"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="屏幕快照 2018-08-01 10.00.10" width="398" height="316"/>
+        <image name="屏幕快照 2018-08-02 14.55.13" width="304" height="102"/>
+        <image name="屏幕快照 2018-08-02 14.55.22" width="302" height="100"/>
+        <image name="屏幕快照 2018-08-02 14.58.51" width="304" height="104"/>
+    </resources>
+</document>

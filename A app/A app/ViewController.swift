@@ -7,6 +7,7 @@
 //
 import UIKit
 
+
 class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,7 +44,7 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var bottomLabelPressed: UILabel!
     @IBOutlet weak var topLabelPressed: UILabel!
-    var audioPlayer: AVAudioPlayer?
+    var audioPlayer: AVAudioPalyer?
     func playSound(named soundName: String) {
         let fileUrl = Bundle.main.url(forResource: "mp3", withExtension: "mp3", subdirectory: nil, localization: nil)
         self.audioPlayer = try!
